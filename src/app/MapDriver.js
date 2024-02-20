@@ -29,7 +29,7 @@ const MapDriver = () => {
       id="map"
       className="h-60 w-96 lg:h-[400px] lg:w-[700px] rounded-3xl overflow-hidden"
     >
-      <LoadScript googleMapsApiKey="AIzaSyBmp45ecrXxpym_oXQNW_cpo6NDKv2uy68">
+      <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_MAPS_API_KEY}>
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={currentLocation}
