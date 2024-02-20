@@ -1,0 +1,5 @@
+npm install firebase
+npm install @googlemaps/js-api-loader
+firebase init
+npm run build 
+firebase deploy
